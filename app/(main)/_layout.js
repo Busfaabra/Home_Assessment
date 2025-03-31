@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 
 import ProfileHeader from './profile/profileHeader';
 import UserInfoForm from './profile/userInfoForm';
@@ -16,21 +16,25 @@ export default function () {
 
   const [selectedSex, setSelectedSex] = useState('Sex');
 
+  const [fullName, setFullName] = useState('');
+
+  const [position, setPosition] = useState('');
+
   const progresSex = useSharedValue(0);
 
   const snapPoints = useMemo(() => [235], []);
 
   return (
-    <View className="flex-1 dark:bg-black">
+    <ScrollView contentContainerStyle={{ flex: 1 }} className="dark:bg-black" scrollEnabled={false} keyboardShouldPersistTaps="handled">
       <ProfileHeader />
 
-      <UserInfoForm {...{ homeSheetRef, progresSex, selectedSex }} />
+      <UserInfoForm {...{ homeSheetRef, progresSex, selectedSex, fullName, setFullName, position, setPosition }} />
 
       <ThemeSwitcher />
 
       <CustomBottomSheat ref={homeSheetRef} snapPoints={snapPoints} backdropComponent={({ animatedIndex, style }) => <HomeOverlayBackdrop {...{ animatedIndex, style, progresSex, selectedSex }} />}>
         <ProfileSheetContent {...{ homeSheetRef, progresSex, selectedSex, setSelectedSex }} />
       </CustomBottomSheat>
-    </View>
+    </ScrollView>
   );
 }
