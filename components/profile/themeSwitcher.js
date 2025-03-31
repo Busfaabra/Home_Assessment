@@ -1,5 +1,5 @@
 import { Text, View, TouchableOpacity } from 'react-native';
-import useColorScheme from '../../../hooks/useColorScheme';
+import useColorScheme from '../../hooks/useColorScheme';
 
 export default function ThemeSwitcher() {
   const { colorScheme, setColorScheme } = useColorScheme();
