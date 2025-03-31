@@ -33,15 +33,7 @@ export default function InfoInput({ placeholder, value, onChangeText }) {
 
   return (
     <View className="bg-gray-100 h-14 rounded-xl justify-center mb-3.5">
-      <TextInput
-        className="h-full pl-4 text-md"
-        selectionColor="#111111"
-        value={value}
-        onChangeText={onChangeText}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        placeholderTextColor={colorScheme === 'dark' ? '#FFFFFF' : '#030712'}
-      />
+      <TextInput className="h-full pl-4 text-sm" selectionColor="#111111" value={value} onChangeText={onChangeText} onFocus={handleFocus} onBlur={handleBlur} />
       <Animated.Text style={holderAnim} className="absolute left-4 text-[#03071280] pointer-events-none">
         {placeholder}
       </Animated.Text>
