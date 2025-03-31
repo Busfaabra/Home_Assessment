@@ -1,4 +1,4 @@
-import { Pressable, Text, TextInput, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Animated, { interpolate, useAnimatedStyle, withTiming } from 'react-native-reanimated';
 import InfoInput from './InfoInput';
 
@@ -24,7 +24,7 @@ export default function UserInfoForm({ homeSheetRef, progresSex, selectedSex, fu
           progresSex.value = withTiming(1);
         }}
       >
-        <Text className="text-[#03071280] text-sm font-medium ml-3">{selectedSex}</Text>
+        <Text className="text-STextColor text-sm font-medium ml-3">{selectedSex}</Text>
       </AnimButton>
     </View>
   );

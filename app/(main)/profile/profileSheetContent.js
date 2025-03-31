@@ -5,7 +5,7 @@ export default function ProfileSheetContent({ homeSheetRef, progresSex, selected
   return (
     <View className="flex-1">
       <View className="flex-row justify-between p-6 items-center">
-        <Text className="text-[#030712] text-2xl font-bold">Select Sex</Text>
+        <Text className="text-PTextColor text-2xl font-bold">Select Sex</Text>
         <Pressable
           onPress={() => {
             homeSheetRef.current.close();
@@ -24,7 +24,7 @@ export default function ProfileSheetContent({ homeSheetRef, progresSex, selected
         }}
         className="flex-row justify-between items-center p-6"
       >
-        <Text className="text-lg font-semibold text-[#030712]">Male</Text>
+        <Text className="text-lg font-semibold text-PTextColor">Male</Text>
         <View className="h-5 w-5 rounded-full border border-gray-300" />
       </Pressable>
       <View className="bg-gray-100 h-0.5 mx-6" />
@@ -35,7 +35,7 @@ export default function ProfileSheetContent({ homeSheetRef, progresSex, selected
         }}
         className="flex-row justify-between items-center p-6"
       >
-        <Text className="text-lg font-semibold text-[#030712]">Female</Text>
+        <Text className="text-lg font-semibold text-PTextColor">Female</Text>
         <View className="h-5 w-5 rounded-full border border-gray-300" />
       </Pressable>
     </View>
