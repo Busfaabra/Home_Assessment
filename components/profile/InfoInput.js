@@ -13,26 +13,29 @@ export default function InfoInput({ placeholder, value, onChangeText, ...rest })
   };
 
   const handleBlur = () => {
-    holder.value = withTiming(0, { duration });
+    if (!value.length) holder.value = withTiming(0, { duration });
   };
 
   const holderAnim = useAnimatedStyle(() => {
     return {
       transform: [
         {
-          scale: interpolate(holder.value, [0, 1], [1, 0.8]),
+          scale: interpolate(holder.value, [0, 1], [1, 0.83]),
         },
         {
-          translateY: interpolate(holder.value, [0, 1], [0, -20]),
+          translateY: interpolate(holder.value, [0, 1], [0, -10]),
+        },
+        {
+          translateX: interpolate(holder.value, [0, 1], [0, -7]),
         },
       ],
     };
   });
 
   return (
-    <View className="bg-gray-100 h-14 rounded-xl justify-center mb-3.5">
-      <TextInput className="h-full pl-4 text-sm" selectionColor={Colors.STextColor} value={value} onChangeText={onChangeText} onFocus={handleFocus} onBlur={handleBlur} {...rest} />
-      <Animated.Text style={holderAnim} className="absolute left-4 text-STextColor pointer-events-none">
+    <View className="bg-gray-100 h-[56] justify-center rounded-xl mb-[14]">
+      <TextInput className="h-full pl-[16] pt-[10] text-sm" selectionColor={Colors.STextColor} value={value} onChangeText={onChangeText} onFocus={handleFocus} onBlur={handleBlur} {...rest} />
+      <Animated.Text style={holderAnim} className="absolute left-[16] text-STextColor pointer-events-none">
         {placeholder}
       </Animated.Text>
     </View>

@@ -5,6 +5,8 @@ const Colors = {
   primary: '#fff',
   PTextColor: '#030712',
   STextColor: '#03071280',
+  hover: '#0307121A',
+  selected: '#0307120D',
 };
 
 module.exports = Colors;
