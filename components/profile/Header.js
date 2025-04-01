@@ -10,7 +10,7 @@ export default function Header({ onClose, selectedSex, progresSex }) {
           onClose();
           if (selectedSex === 'Sex') progresSex.value = withTiming(0);
         }}
-        className="h-[40] w-[40] bg-selected items-center justify-center rounded-full"
+        className="h-[40] w-[40] bg-primary items-center justify-center rounded-full"
       >
         <Image className="w-3 h-3" source={require('../../assets/images/close.png')} />
       </Pressable>
