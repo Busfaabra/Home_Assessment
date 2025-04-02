@@ -1,13 +1,18 @@
 const Colors = {
-  light: '#716222',
-  dark: '#1A1A1A',
+  dark: {
+    PText: '#FFFFFF',
+    SText: '#FFFFFF80',
+    PBgComp: '#FFFFFF0D',
+    primary: '#269B82',
+  },
 
-  primary: '#0307120D',
-  PTextColor: '#030712',
-  STextColor: '#03071280',
-  hover: '#0307121A',
-  white: '#ffffff',
-  green: '#085F4C',
+  light: {
+    PText: '#030712',
+    SText: '#03071280',
+    PBgComp: '#0307120D',
+    hover: '#0307121A',
+    primary: '#085F4C',
+  },
 };
 
 module.exports = Colors;
