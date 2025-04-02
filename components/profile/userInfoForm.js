@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import { interpolate, useAnimatedStyle } from 'react-native-reanimated';
+
 import InfoInput from './InfoInput';
-import SelectableButton from './SelectableButton';
+import SelectableButton from './selectableButton';
 
 export default function UserInfoForm({ homeSheetRef, progresSex, selectedSex, fullName, setFullName, position, setPosition }) {
   return (

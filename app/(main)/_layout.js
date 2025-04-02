@@ -5,7 +5,7 @@ import UserInfoForm from '../../components/profile/userInfoForm.js';
 import ThemeSwitcher from '../../components/profile/themeSwitcher.js';
 import ProfileSheetContent from '../../components/profile/profileSheetContent.js';
 
-import CustomBottomSheat from '../../components/common/CustomBottomSheat.js';
+import CustomBottomSheat from '../../components/common/customBottomSheat.js';
 
 import { useSharedValue, withTiming } from 'react-native-reanimated';
 import { View } from 'react-native';

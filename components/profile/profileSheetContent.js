@@ -1,7 +1,7 @@
 import { View } from 'react-native';
 
-import SexOption from './SexOption';
-import Divider from './Divider';
+import SexOption from './sexOption';
+import Divider from './divider';
 import HeaderSheetContent from './headerSheetContent';
 
 export default function ProfileSheetContent({ homeSheetRef, progresSex, selectedSex, setSelectedSex }) {
