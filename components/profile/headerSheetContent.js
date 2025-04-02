@@ -1,7 +1,7 @@
 import { Image, Pressable, Text, View } from 'react-native';
 import { withTiming } from 'react-native-reanimated';
 
-export default function Header({ onClose, selectedSex, progresSex }) {
+export default function HeaderSheetContent({ onClose, selectedSex, progresSex }) {
   return (
     <View className="flex-row justify-between py-[16] px-[20] items-center">
       <Text className="text-PTextColor text-2xl font-bold">Select Sex</Text>
