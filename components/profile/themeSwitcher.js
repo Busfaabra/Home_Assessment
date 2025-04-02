@@ -11,7 +11,7 @@ const C_WIDTH = 34;
 const LEFTOVER_SPACE = T_WIDTH - (C_WIDTH + MARGIN_LEFT + PADDING);
 const TRANSLATE_X = LEFTOVER_SPACE - (MARGIN_LEFT + PADDING);
 
-function Icon({ name, size, className }) {
+function Icon({ name = 'busfaabra', size = 20, className }) {
   return (
     <View className={className}>
       <MaterialIcons name={name} size={size} color="white" />
