@@ -1,12 +1,13 @@
 import { useMemo, useRef, useState } from 'react';
-import ProfileHeader from '../../components/profile/profileHeader.js';
-import UserInfoForm from '../../components/profile/userInfoForm.js';
-import ThemeSwitcher from '../../components/profile/themeSwitcher.js';
-import ProfileSheetContent from '../../components/profile/profileSheetContent.js';
-import CustomBottomSheat from '../../components/common/customBottomSheat.js';
-import OverlayBackdrop from '../../components/common/overlayBackdrop.js';
-import KeyboardAvoidingWrapper from '../../components/common/keyboardAvoidingWrapper.js';
 import { useSharedValue, withTiming } from 'react-native-reanimated';
+
+import CustomBottomSheat from '../../components/common/customBottomSheat.js';
+import KeyboardAvoidingWrapper from '../../components/common/keyboardAvoidingWrapper.js';
+import OverlayBackdrop from '../../components/common/overlayBackdrop.js';
+import ProfileHeader from '../../components/profile/profileHeader.js';
+import ProfileSheetContent from '../../components/profile/profileSheetContent.js';
+import ThemeSwitcher from '../../components/profile/themeSwitcher.js';
+import UserInfoForm from '../../components/profile/userInfoForm.js';
 
 export default function () {
   const homeSheetRef = useRef(null);

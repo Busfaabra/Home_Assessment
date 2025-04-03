@@ -1,7 +1,8 @@
-import { View, Pressable, StyleSheet } from 'react-native';
-import useColorScheme from '../../hooks/useColorScheme';
-import Animated, { interpolate, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { View, Pressable, StyleSheet } from 'react-native';
+import Animated, { interpolate, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+
+import useColorScheme from '../../hooks/useColorScheme';
 
 const T_WIDTH = 100;
 const PADDING = 2.8;

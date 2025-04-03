@@ -1,7 +1,6 @@
 import { useBottomSheet } from '@gorhom/bottom-sheet';
-
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import Animated, { Extrapolation, interpolate, runOnJS, useAnimatedStyle, withTiming } from 'react-native-reanimated';
+import Animated, { Extrapolation, interpolate, runOnJS, useAnimatedStyle } from 'react-native-reanimated';
 
 export default function OverlayBackdrop({ onGesturePan, animatedIndex, style }) {
   const { close } = useBottomSheet();

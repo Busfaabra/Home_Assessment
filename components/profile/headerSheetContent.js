@@ -10,8 +10,7 @@ export default function HeaderSheetContent({ onClose, selectedSex, progresSex })
           onClose();
           if (selectedSex === 'Sex') progresSex.value = withTiming(0);
         }}
-        className="h-[40] w-[40] bg-light-PBgComp items-center justify-center rounded-full"
-      >
+        className="h-[40] w-[40] bg-light-PBgComp items-center justify-center rounded-full">
         <Image className="w-3 h-3" source={require('../../assets/images/close.png')} />
       </Pressable>
     </View>

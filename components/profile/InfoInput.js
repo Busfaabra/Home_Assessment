@@ -1,6 +1,6 @@
 import { TextInput, View } from 'react-native';
-
 import Animated, { interpolate, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+
 import Colors from '../../components/constants/colors';
 
 const duration = 150;
